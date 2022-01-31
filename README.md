@@ -39,6 +39,20 @@ There is no need to compile these libraries, as they are all header-only.
 The Boost libraries should be available on most Linux distributions, likely named either ```boost-devel```, ```boost-libs```, or just ```boost```.
 
 ### Compiling using CMake
+
+#### Installation of dependencies (Ubuntu 20.04.3 LTS)
+
+Required:
+* libboost-all-dev >= 1.60
+* openssl 1.1.1f-ubuntu2.10
+* libssl-dev 1.1.1f
+
+
+```
+sudo apt install cmake g++ libssl1.1 openssl libssl-dev git libboost1.67-dev libboost1.67-all-dev
+```
+
+#### Compiling 
 On my machine, I can compile using the following commands:
 ```
 git submodule update --init --recursive
