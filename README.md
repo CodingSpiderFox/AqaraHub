@@ -49,7 +49,10 @@ Required:
 
 
 ```
-sudo apt install cmake g++ libssl1.1 openssl libssl-dev git libboost1.67-dev libboost1.67-all-dev \
+sudo -i
+apt update
+apt upgrade -y
+apt install cmake g++ libssl1.1 openssl libssl-dev git libboost1.67-dev libboost1.67-all-dev \
    mosquitto mosquitto-clients \
    telnet tmux
 ```
